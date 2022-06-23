@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.SpecialModal__landscape {
+  object-fit:fill;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 10px 10px 10px black;
+}
+
+.SpecialModal__portrait {
+  display: none;
+  object-fit: fill;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.special-tagline {
+  margin-top:'20px';
+  padding-bottom: 10px;
+  align-self: center;
+  color: grey;
+  font-size: 3vw;
+}
+
+.SpecialModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  width: 80%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.SpecialModal::-webkit-scrollbar {
+  display: none;
+}
+
+.SpecialModal__about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.SpecialModal__title {
+  margin-top:20px;
+  max-height: 9%;
+  color: white;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.SpecialModal__description {
+  display: flex;
+  color: white;
+  height: 30%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 5px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 2px gold;
+  text-align: justify;
+}
+
+.SpecialModal__description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .SpecialModal__landscape {
+    display: none;
+  }
+  .SpecialModal__portrait {
+    display: flex;
+    width: 100%;
+    margin-right: 5px;
+  }
+  .SpecialModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .SpecialModal__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+  .SpecialModal__title {
+    font-size: 3.5vw;
+  }
+  .SpecialModal__description {
+    font-size: 22px;
+  }
+  .special-tagline {
+    font-size: 2vw;
+  } 
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Koulen&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.header {
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #010b13;
+    font-family: "Koulen", sans-serif;
+    font-size: 3vw;
+    padding-bottom: 15px;
+    box-shadow: 0px 1px 5px #34f7b3;
+    color: #34f7b3;
+    z-index: 100;
+  }
+
+  .header:hover {
+    color: white;
+  }
+
+  .logo {
+    width: 3em;
+  }
+  
+  @media (max-width: 1000px) {
+    .header {
+      padding-top: 13px;
+      font-size: 4vw;
+    }
+  }
